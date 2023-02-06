@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Body */
+body {
+    background-color: #1E1E1E;
+}
+
 /* Container */
 .container {
     max-width: 900px;
@@ -16,9 +21,34 @@
     padding-top: 100px;
 }
 
+/* Carosello */
+.carousel {
+    position: relative;
+}
+
 /* Immagine delle slide */
 .slide img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* Bottone */
+.btn {
+    font-size: 52px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* Bottone per andare indietro con le immagini */
+.left {
+    top: 50%;
+    left: 10px;
+}
+
+/* Bottone per andare avanti con le immagini */
+.right {
+    top: 50%;
+    right: 10px;
 }
