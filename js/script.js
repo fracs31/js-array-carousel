@@ -10,13 +10,17 @@ btnRight.addEventListener("click", function() {
     if (index < (images.length - 1)) {
         index++; //incremento l'indice
         img.src = images[index]; //cambio l'immagine
-    } else if (index == (images.length - 1)) { //se l'indice è uguale alla lunghezza dell'array di immagini
+    } else if (index == (images.length - 1)) { //altrimenti se l'indice è uguale alla lunghezza dell'array di immagini
         index = 0; //azzero l'indice
         img.src = images[index]; //cambio l'immagine
     }
 });
 
-//Quando viene premuto il tasto per andare avanti con le immagini del carosello
+//Quando viene premuto il tasto per andare indietro con le immagini del carosello
 btnLeft.addEventListener("click", function() {
-    
+    //Se l'indice è uguale a 0
+    if (index == 0) {
+        index = images.length - 1; //assegno all'indice il valore della lunghezza dell'array di immagini meno 1
+        img.src = images[index]; //cambio l'immagine
+    }
 });
